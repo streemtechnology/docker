@@ -24,6 +24,8 @@ How to use
 4. A random stream has been autmatically added for ingest and delivery. It can be accessed at 
    `http://<ip>:8080/dash/stream.m3u8` Integrated player using [hls.js](https://github.com/dailymotion/hls.js/tree/master) can play hls in chrome at `http://<ip>/static/player.html`
 
+5. Server statistics are exposed at `http://<ip>/stat` 
+
 
 Links
 -----
