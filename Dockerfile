@@ -5,6 +5,7 @@ ENV PATH $PATH:/usr/local/nginx/sbin
 
 EXPOSE 1935
 EXPOSE 8080
+EXPOSE 80
 
 # create directories
 RUN mkdir /src /config /logs /data /static
