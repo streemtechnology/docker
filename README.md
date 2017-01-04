@@ -12,7 +12,7 @@ How to use
 ----------
 
 1. Build and run the container (`docker build -t nginx_rtmp .` &
-   `docker run -p 1935:1935 -p 8080:8080 --rm nginx_rtmp`).
+   `docker run -p 80:80 -p 1935:1935 -p 8080:8080 --rm nginx_rtmp`).
 
 2. Stream your live content to `rtmp://<ip>:1935/encoder/stream_name` where
    `stream_name` is the name of your stream.
@@ -22,7 +22,7 @@ How to use
    This gives the submitted stream. 
 
 4. A random stream has been autmatically added for ingest and delivery. It can be accessed at 
-   `http://<ip>:8080/dash/stream.m3u8`
+   `http://<ip>:8080/dash/stream.m3u8` Integrated player using [hls.js](https://github.com/dailymotion/hls.js/tree/master) can play hls in chrome at `http://<ip>/static/player.html`
 
 
 Links
